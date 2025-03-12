@@ -1,6 +1,11 @@
+function closeOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+    document.querySelector('.content').style.display = 'block';
+    document.body.style.overflow = 'auto';
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const gallery = document.getElementById("gallery");
-
     for (let i = 0; i <= 44; i++) {
         let img = document.createElement("img");
         img.src = `all/${i}.png`;
@@ -10,16 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let mybutton = document.getElementById("myBtn");
-
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-    if (scrollPosition > 30000) {
-        mybutton.style.display = "block";
-        mybutton.style.bottom = "3rem";
-    } else if (scrollPosition > 20) {
+    if (scrollPosition > 20) {
         mybutton.style.display = "block";
         mybutton.style.bottom = "1rem";
     } else {
