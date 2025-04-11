@@ -2,7 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: Arial, sans-serif;
+     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 body {
@@ -44,7 +44,21 @@ body {
 
 .content {
      display: none;
-     padding: 20px;
+     padding: 10px;
+}
+
+.cover {
+     padding-top: 20rem;
+     padding-bottom: 20rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.cover-content {
+     margin: 0.5rem;
 }
 
 .gallery {
@@ -56,7 +70,7 @@ body {
 
 .gallery img {
      width: 100%;
-     max-width: 600px;
+     max-width: 1000px;
      height: auto;
 }
 
