@@ -6,7 +6,7 @@ function closeOverlay() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const gallery = document.getElementById("gallery");
-    for (let i = 0; i <= 3; i++) {
+    for (let i = 0; i <= 2; i++) {
         let img = document.createElement("img");
         img.src = `all/${i}.png`;
         img.alt = `Gambar ${i}`;
